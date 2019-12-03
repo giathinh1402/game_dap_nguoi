@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggameplay"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="80dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn1"
+                android:layout_width="141dp"
+                android:layout_height="57dp"
+                android:background="@drawable/hood" />
+
+            <ImageView
+                android:id="@+id/img_bua_1"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-5dp"
+                android:background="@drawable/hammer"
+                />
+
+            <ImageView
+                android:id="@+id/img_chuot_1"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="-10dp"
+                android:background="@drawable/human"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn2"
+                android:layout_width="141dp"
+                android:layout_height="57dp"
+                android:background="@drawable/hood" />
+
+            <ImageView
+                android:id="@+id/img_bua_2"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-5dp"
+                android:background="@drawable/hammer"
+                />
+
+            <ImageView
+                android:id="@+id/img_chuot_2"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="-10dp"
+                android:background="@drawable/human"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn3"
+                android:layout_width="141dp"
+                android:layout_height="57dp"
+                android:background="@drawable/hood" />
+
+            <ImageView
+                android:id="@+id/img_bua_3"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-5dp"
+                android:background="@drawable/hammer"
+                />
+
+            <ImageView
+                android:id="@+id/img_chuot_3"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="-10dp"
+                android:background="@drawable/human"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="50dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn4"
+                android:layout_width="141dp"
+                android:layout_height="57dp"
+                android:background="@drawable/hood" />
+
+            <ImageView
+                android:id="@+id/img_bua_4"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-5dp"
+                android:background="@drawable/hammer"
+                />
+
+            <ImageView
+                android:id="@+id/img_chuot_4"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="-10dp"
+                android:background="@drawable/human"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn5"
+                android:layout_width="141dp"
+                android:layout_height="57dp"
+                android:background="@drawable/hood" />
+
+            <ImageView
+                android:id="@+id/img_bua_5"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-5dp"
+                android:background="@drawable/hammer"
+                />
+
+            <ImageView
+                android:id="@+id/img_chuot_5"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="-10dp"
+                android:background="@drawable/human"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn6"
+                android:layout_width="141dp"
+                android:layout_height="57dp"
+                android:background="@drawable/hood" />
+
+            <ImageView
+                android:id="@+id/img_bua_6"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-5dp"
+                android:background="@drawable/hammer"
+                />
+
+            <ImageView
+                android:id="@+id/img_chuot_6"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="-10dp"
+                android:background="@drawable/human"
+                />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="50dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn7"
+                android:layout_width="141dp"
+                android:layout_height="57dp"
+                android:background="@drawable/hood" />
+
+            <ImageView
+                android:id="@+id/img_bua_7"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-5dp"
+                android:background="@drawable/hammer"
+                />
+
+            <ImageView
+                android:id="@+id/img_chuot_7"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="-10dp"
+                android:background="@drawable/human"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn8"
+                android:layout_width="141dp"
+                android:layout_height="57dp"
+                android:background="@drawable/hood" />
+
+            <ImageView
+                android:id="@+id/img_bua_8"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-5dp"
+                android:background="@drawable/hammer"
+                />
+
+            <ImageView
+                android:id="@+id/img_chuot_8"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="-10dp"
+                android:background="@drawable/human"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn9"
+                android:layout_width="141dp"
+                android:layout_height="57dp"
+                android:background="@drawable/hood" />
+
+            <ImageView
+                android:id="@+id/img_bua_9"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-5dp"
+                android:background="@drawable/hammer"
+                />
+
+            <ImageView
+                android:id="@+id/img_chuot_9"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="-10dp"
+                android:background="@drawable/human"
+                />
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -53,6 +53,7 @@ public class PlayActivity extends AppCompatActivity {
 
         img9 = findViewById(R.id.btn9); //Tìm lại button
         imgBua9 = findViewById(R.id.img_bua_9);
+        imgChuot9 = findViewById(R.id.img_chuot_9);
 
 
         // an bua

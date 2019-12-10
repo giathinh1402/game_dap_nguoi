@@ -7,12 +7,76 @@
     android:orientation="vertical"
     tools:ignore="ExtraText">
 
+<!--    <LinearLayout-->
+<!--        android:id="@+id/game_over"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@drawable/gameover">-->
 
+<!--    </LinearLayout>-->
+
+    //score
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="90dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btnscore"
+                android:layout_width="141dp"
+                android:layout_height="57dp"
+                android:background="@drawable/score"/>
+
+            <TextView
+                android:id="@+id/text_score"
+                android:text=""
+                android:textSize="30dp"
+                android:textColor="#1a0b03"
+                android:layout_width="100dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+    //time
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/btntime"
+            android:layout_width="141dp"
+            android:layout_height="60dp"
+            android:background="@drawable/time"/>
+
+        <TextView
+            android:id="@+id/text_time"
+            android:text="Time "
+            android:textSize="25dp"
+            android:textColor="#f7b08b"
+            android:layout_width="150dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="-120dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+
+    //hàng 1
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="210dp"
-        android:layout_marginTop="80dp">
+        android:layout_marginTop="-140dp">
 
         <FrameLayout
             android:layout_width="wrap_content"
@@ -36,10 +100,10 @@
             <ImageView
                 android:id="@+id/img_chuot_1"
                 android:layout_width="80dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:layout_marginLeft="27dp"
                 android:layout_marginTop="-10dp"
-                android:background="@drawable/human"
+                android:background="@drawable/chuot"
                 />
 
         </FrameLayout>
@@ -66,10 +130,10 @@
             <ImageView
                 android:id="@+id/img_chuot_2"
                 android:layout_width="80dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:layout_marginLeft="27dp"
                 android:layout_marginTop="-10dp"
-                android:background="@drawable/human"
+                android:background="@drawable/chuot"
                 />
 
         </FrameLayout>
@@ -96,21 +160,22 @@
             <ImageView
                 android:id="@+id/img_chuot_3"
                 android:layout_width="80dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:layout_marginLeft="27dp"
                 android:layout_marginTop="-10dp"
-                android:background="@drawable/human"
+                android:background="@drawable/chuot"
                 />
 
         </FrameLayout>
 
     </LinearLayout>
 
+    //hàng 2
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="210dp"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="15dp">
 
         <FrameLayout
             android:layout_width="wrap_content"
@@ -134,10 +199,10 @@
             <ImageView
                 android:id="@+id/img_chuot_4"
                 android:layout_width="80dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:layout_marginLeft="27dp"
                 android:layout_marginTop="-10dp"
-                android:background="@drawable/human"
+                android:background="@drawable/chuot"
                 />
 
         </FrameLayout>
@@ -164,10 +229,10 @@
             <ImageView
                 android:id="@+id/img_chuot_5"
                 android:layout_width="80dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:layout_marginLeft="27dp"
                 android:layout_marginTop="-10dp"
-                android:background="@drawable/human"
+                android:background="@drawable/chuot"
                 />
 
         </FrameLayout>
@@ -194,20 +259,21 @@
             <ImageView
                 android:id="@+id/img_chuot_6"
                 android:layout_width="80dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:layout_marginLeft="27dp"
                 android:layout_marginTop="-10dp"
-                android:background="@drawable/human"
+                android:background="@drawable/chuot"
                 />
 
         </FrameLayout>
     </LinearLayout>
 
+    //hàng 3
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="210dp"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="15dp">
 
         <FrameLayout
             android:layout_width="wrap_content"
@@ -216,7 +282,7 @@
             <ImageView
                 android:id="@+id/btn7"
                 android:layout_width="141dp"
-                android:layout_height="57dp"
+                android:layout_height="70dp"
                 android:background="@drawable/hood" />
 
             <ImageView
@@ -231,10 +297,10 @@
             <ImageView
                 android:id="@+id/img_chuot_7"
                 android:layout_width="80dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:layout_marginLeft="27dp"
                 android:layout_marginTop="-10dp"
-                android:background="@drawable/human"
+                android:background="@drawable/chuot"
                 />
 
         </FrameLayout>
@@ -246,7 +312,7 @@
             <ImageView
                 android:id="@+id/btn8"
                 android:layout_width="141dp"
-                android:layout_height="57dp"
+                android:layout_height="70dp"
                 android:background="@drawable/hood" />
 
             <ImageView
@@ -261,10 +327,10 @@
             <ImageView
                 android:id="@+id/img_chuot_8"
                 android:layout_width="80dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:layout_marginLeft="27dp"
                 android:layout_marginTop="-10dp"
-                android:background="@drawable/human"
+                android:background="@drawable/chuot"
                 />
 
         </FrameLayout>
@@ -276,7 +342,7 @@
             <ImageView
                 android:id="@+id/btn9"
                 android:layout_width="141dp"
-                android:layout_height="57dp"
+                android:layout_height="70dp"
                 android:background="@drawable/hood" />
 
             <ImageView
@@ -291,13 +357,14 @@
             <ImageView
                 android:id="@+id/img_chuot_9"
                 android:layout_width="80dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:layout_marginLeft="27dp"
                 android:layout_marginTop="-10dp"
-                android:background="@drawable/human"
+                android:background="@drawable/chuot"
                 />
 
         </FrameLayout>
+
     </LinearLayout>
 
 

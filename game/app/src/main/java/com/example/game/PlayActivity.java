@@ -1,14 +1,16 @@
 package com.example.game;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
+import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 import java.util.Timer;
@@ -18,11 +20,16 @@ public class PlayActivity extends AppCompatActivity {
     ImageView img1, img2, img3, img4, img5, img6, img7, img8, img9;
     ImageView imgBua1, imgBua2, imgBua3, imgBua4, imgBua5, imgBua6, imgBua7, imgBua8, imgBua9;
     ImageView imgChuot1, imgChuot2, imgChuot3, imgChuot4, imgChuot5, imgChuot6, imgChuot7, imgChuot8, imgChuot9;
+    TextView textTime, textScore;
+    int score = 0;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
+
+        textScore = findViewById(R.id.text_score);
+        textTime = findViewById(R.id.text_time);
 
         //image goi button
         img1 = findViewById(R.id.btn1); //Tìm lại button
@@ -95,11 +102,12 @@ public class PlayActivity extends AppCompatActivity {
         img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PlayActivity.this, "Bạn đã click 1", Toast.LENGTH_SHORT).show();
                 imgBua1.setVisibility(View.VISIBLE); // hien bua
 
-                if(imgChuot1.getVisibility() == View.VISIBLE){
+                if (imgChuot1.getVisibility() == View.VISIBLE) {
                     imgChuot1.setVisibility(View.GONE);
+                    score += 1;
+                    displayScore();
 
                     new Handler().postDelayed(new Runnable() {
                         @Override
@@ -107,6 +115,10 @@ public class PlayActivity extends AppCompatActivity {
                             imgBua1.setVisibility(View.GONE);
                         }
                     }, 200);
+                }else{
+                    score -=2;
+                    imgBua1.setVisibility(View.GONE);
+                    displayScore();
                 }
             }
         });
@@ -114,11 +126,13 @@ public class PlayActivity extends AppCompatActivity {
         img2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PlayActivity.this, "Bạn đã click 2", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(PlayActivity.this, "Bạn đã click 2", Toast.LENGTH_SHORT).show();
                 imgBua2.setVisibility(View.VISIBLE); // hien bua
 
-                if(imgChuot2.getVisibility() == View.VISIBLE){
+                if (imgChuot2.getVisibility() == View.VISIBLE) {
                     imgChuot2.setVisibility(View.GONE);
+                    score += 1;
+                    displayScore();
 
                     new Handler().postDelayed(new Runnable() {
                         @Override
@@ -126,6 +140,10 @@ public class PlayActivity extends AppCompatActivity {
                             imgBua2.setVisibility(View.GONE);
                         }
                     }, 200);
+                }else{
+                    score -=2;
+                    imgBua2.setVisibility(View.GONE);
+                    displayScore();
                 }
             }
         });
@@ -133,11 +151,13 @@ public class PlayActivity extends AppCompatActivity {
         img3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PlayActivity.this, "Bạn đã click 3", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(PlayActivity.this, "Bạn đã click 3", Toast.LENGTH_SHORT).show();
                 imgBua3.setVisibility(View.VISIBLE); // hien bua
 
-                if(imgChuot3.getVisibility() == View.VISIBLE){
+                if (imgChuot3.getVisibility() == View.VISIBLE) {
                     imgChuot3.setVisibility(View.GONE);
+                    score += 1;
+                    displayScore();
 
                     new Handler().postDelayed(new Runnable() {
                         @Override
@@ -145,6 +165,10 @@ public class PlayActivity extends AppCompatActivity {
                             imgBua3.setVisibility(View.GONE);
                         }
                     }, 200);
+                }else{
+                    score -=2;
+                    imgBua3.setVisibility(View.GONE);
+                    displayScore();
                 }
             }
         });
@@ -152,11 +176,13 @@ public class PlayActivity extends AppCompatActivity {
         img4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PlayActivity.this, "Bạn đã click 4", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(PlayActivity.this, "Bạn đã click 4", Toast.LENGTH_SHORT).show();
                 imgBua4.setVisibility(View.VISIBLE); // hien bua
 
-                if(imgChuot4.getVisibility() == View.VISIBLE){
+                if (imgChuot4.getVisibility() == View.VISIBLE) {
                     imgChuot4.setVisibility(View.GONE);
+                    score += 1;
+                    displayScore();
 
                     new Handler().postDelayed(new Runnable() {
                         @Override
@@ -164,6 +190,10 @@ public class PlayActivity extends AppCompatActivity {
                             imgBua4.setVisibility(View.GONE);
                         }
                     }, 200);
+                }else{
+                    score -=2;
+                    imgBua4.setVisibility(View.GONE);
+                    displayScore();
                 }
             }
         });
@@ -171,11 +201,13 @@ public class PlayActivity extends AppCompatActivity {
         img5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PlayActivity.this, "Bạn đã click 5", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(PlayActivity.this, "Bạn đã click 5", Toast.LENGTH_SHORT).show();
                 imgBua5.setVisibility(View.VISIBLE); // hien bua
 
-                if(imgChuot5.getVisibility() == View.VISIBLE){
+                if (imgChuot5.getVisibility() == View.VISIBLE) {
                     imgChuot5.setVisibility(View.GONE);
+                    score += 1;
+                    displayScore();
 
                     new Handler().postDelayed(new Runnable() {
                         @Override
@@ -183,6 +215,10 @@ public class PlayActivity extends AppCompatActivity {
                             imgBua5.setVisibility(View.GONE);
                         }
                     }, 200);
+                }else{
+                    score -=2;
+                    imgBua5.setVisibility(View.GONE);
+                    displayScore();
                 }
             }
         });
@@ -190,11 +226,13 @@ public class PlayActivity extends AppCompatActivity {
         img6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PlayActivity.this, "Bạn đã click 6", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(PlayActivity.this, "Bạn đã click 6", Toast.LENGTH_SHORT).show();
                 imgBua6.setVisibility(View.VISIBLE); // hien bua
 
-                if(imgChuot6.getVisibility() == View.VISIBLE){
+                if (imgChuot6.getVisibility() == View.VISIBLE) {
                     imgChuot6.setVisibility(View.GONE);
+                    score += 1;
+                    displayScore();
 
                     new Handler().postDelayed(new Runnable() {
                         @Override
@@ -202,6 +240,10 @@ public class PlayActivity extends AppCompatActivity {
                             imgBua6.setVisibility(View.GONE);
                         }
                     }, 200);
+                }else{
+                    score -=2;
+                    imgBua6.setVisibility(View.GONE);
+                    displayScore();
                 }
             }
         });
@@ -209,11 +251,13 @@ public class PlayActivity extends AppCompatActivity {
         img7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PlayActivity.this, "Bạn đã click 7", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(PlayActivity.this, "Bạn đã click 7", Toast.LENGTH_SHORT).show();
                 imgBua7.setVisibility(View.VISIBLE); // hien bua
 
-                if(imgChuot7.getVisibility() == View.VISIBLE){
+                if (imgChuot7.getVisibility() == View.VISIBLE) {
                     imgChuot7.setVisibility(View.GONE);
+                    score += 1;
+                    displayScore();
 
                     new Handler().postDelayed(new Runnable() {
                         @Override
@@ -221,6 +265,10 @@ public class PlayActivity extends AppCompatActivity {
                             imgBua7.setVisibility(View.GONE);
                         }
                     }, 200);
+                }else{
+                    score -=2;
+                    imgBua7.setVisibility(View.GONE);
+                    displayScore();
                 }
             }
         });
@@ -228,18 +276,24 @@ public class PlayActivity extends AppCompatActivity {
         img8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PlayActivity.this, "Bạn đã click 8", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(PlayActivity.this, "Bạn đã click 8", Toast.LENGTH_SHORT).show();
                 imgBua8.setVisibility(View.VISIBLE); // hien bua
 
-                if(imgChuot9.getVisibility() == View.VISIBLE){
-                    imgChuot9.setVisibility(View.GONE);
+                if (imgChuot8.getVisibility() == View.VISIBLE) {
+                    imgChuot8.setVisibility(View.GONE);
+                    score += 1;
+                    displayScore();
 
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            imgBua9.setVisibility(View.GONE);
+                            imgBua8.setVisibility(View.GONE);
                         }
                     }, 200);
+                }else{
+                    score -=2;
+                    imgBua8.setVisibility(View.GONE);
+                    displayScore();
                 }
             }
         });
@@ -247,11 +301,13 @@ public class PlayActivity extends AppCompatActivity {
         img9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PlayActivity.this, "Bạn đã click 9", Toast.LENGTH_SHORT).show();
-                imgBua9.setVisibility(View.VISIBLE); // hien bua
+//                Toast.makeText(PlayActivity.this, "Bạn đã click 9", Toast.LENGTH_SHORT).show();
+                imgBua9.setVisibility(View.VISIBLE);// hien bua
 
-                if(imgChuot9.getVisibility() == View.VISIBLE){
+                if (imgChuot9.getVisibility() == View.VISIBLE) {
                     imgChuot9.setVisibility(View.GONE);
+                    score += 1;
+                    displayScore();
 
                     new Handler().postDelayed(new Runnable() {
                         @Override
@@ -259,59 +315,96 @@ public class PlayActivity extends AppCompatActivity {
                             imgBua9.setVisibility(View.GONE);
                         }
                     }, 200);
+                }else{
+                    score -=2;
+                    imgBua9.setVisibility(View.GONE);
+                    displayScore();
                 }
             }
         });
 
-
-
-
-        new Timer().scheduleAtFixedRate(new TimerTask(){
+        new Timer().scheduleAtFixedRate(new TimerTask() {
             @Override
-            public void run(){
-
+            public void run() {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         hienThiChuot();
                     }
                 });
-
             }
-        },0,1000);
+        }, 0, 1000);
+        countDownTime();
     }
 
-    int a = 0;
-
-    private void hienThiChuot(){
+    private void hienThiChuot() {
         int randomNumber = new Random().nextInt(9 - 1 + 1) + 1;
-//        Log.i("tag", "A Kiss every 5 seconds"+randomNumber);
-        if(randomNumber == 1){
+        if (randomNumber == 1) {
             imgChuot1.setVisibility(View.VISIBLE);
+        }else{
+            imgChuot1.setVisibility(View.GONE);
         }
-        if(randomNumber == 2){
+        if (randomNumber == 2) {
             imgChuot2.setVisibility(View.VISIBLE);
+        }else{
+            imgChuot2.setVisibility(View.GONE);
         }
-        if(randomNumber == 3){
+        if (randomNumber == 3) {
             imgChuot3.setVisibility(View.VISIBLE);
+        }else{
+            imgChuot3.setVisibility(View.GONE);
         }
-        if(randomNumber == 4){
+        if (randomNumber == 4) {
             imgChuot4.setVisibility(View.VISIBLE);
+        }else{
+            imgChuot4.setVisibility(View.GONE);
         }
-        if(randomNumber == 5){
+        if (randomNumber == 5) {
             imgChuot5.setVisibility(View.VISIBLE);
+        }else{
+            imgChuot5.setVisibility(View.GONE);
         }
-        if(randomNumber == 6){
+        if (randomNumber == 6) {
             imgChuot6.setVisibility(View.VISIBLE);
+        }else{
+            imgChuot6.setVisibility(View.GONE);
         }
-        if(randomNumber == 7){
+        if (randomNumber == 7) {
             imgChuot7.setVisibility(View.VISIBLE);
+        }else{
+            imgChuot7.setVisibility(View.GONE);
         }
-        if(randomNumber == 8){
+        if (randomNumber == 8) {
             imgChuot8.setVisibility(View.VISIBLE);
+        }else{
+            imgChuot8.setVisibility(View.GONE);
         }
-        if(randomNumber == 9) {
+        if (randomNumber == 9) {
             imgChuot9.setVisibility(View.VISIBLE);
+        }else{
+            imgChuot9.setVisibility(View.GONE);
         }
+    }
+
+    private void countDownTime(){
+        new CountDownTimer(20000, 1000){
+            public void onTick(long millisUntilFinished){
+                textTime.setText("Time: " + millisUntilFinished / 1000);
+            }
+            public void onFinish(){
+                textTime.setText("Time Over");
+                openTimeoutScreen();
+            }
+        }.start();
+    }
+
+    public void displayScore() {
+        textScore.setText("" + score);
+    }
+
+    public void openTimeoutScreen(){
+        Intent intent = new Intent(PlayActivity.this, TimeOverActivity.class);
+        intent.putExtra("score", score);
+        startActivity(intent);
     }
 }

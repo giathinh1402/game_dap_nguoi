@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/time_over"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="478dp"
+                android:layout_height="155dp"
+                android:layout_marginLeft="140dp"
+                android:background="@drawable/time" />
+
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="390dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="20dp"
+                android:text="Time Over "
+                android:textColor="#f7b08b"
+                android:textSize="80dp" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="648dp"
+                android:layout_height="155dp"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/time" />
+
+            <TextView
+                android:id="@+id/your_score"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="20dp"
+                android:text="Your Score: "
+                android:textColor="#f7b08b"
+                android:textSize="80dp" />
+
+            <TextView
+                android:id="@+id/text_score"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="600dp"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:textColor="#f7b08b"
+                android:textSize="80dp" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

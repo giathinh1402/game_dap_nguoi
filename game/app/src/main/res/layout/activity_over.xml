@@ -4,13 +4,32 @@
     android:background="@drawable/gameover"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btnCallActivityA"
-        android:layout_width="417dp"
-        android:layout_height="96dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="250dp"
-        android:background="@drawable/btnplay"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="-20dp">
+
+            <ImageView
+                android:id="@+id/play_again"
+                android:layout_width="648dp"
+                android:layout_height="155dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="10px"
+                android:background="@drawable/time" />
+
+            <TextView
+                android:layout_width="492dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="20dp"
+                android:text="Play again"
+                android:textColor="#f7b08b"
+                android:textSize="80dp" />
+        </FrameLayout>
+    </LinearLayout>
 
 </LinearLayout>

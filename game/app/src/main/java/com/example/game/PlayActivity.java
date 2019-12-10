@@ -119,7 +119,7 @@ public class PlayActivity extends AppCompatActivity {
                     score -=2;
                     imgBua1.setVisibility(View.GONE);
                     displayScore();
-                }
+                }displayOver();
             }
         });
 
@@ -144,7 +144,7 @@ public class PlayActivity extends AppCompatActivity {
                     score -=2;
                     imgBua2.setVisibility(View.GONE);
                     displayScore();
-                }
+                }displayOver();
             }
         });
 
@@ -169,7 +169,7 @@ public class PlayActivity extends AppCompatActivity {
                     score -=2;
                     imgBua3.setVisibility(View.GONE);
                     displayScore();
-                }
+                }displayOver();
             }
         });
 
@@ -194,7 +194,7 @@ public class PlayActivity extends AppCompatActivity {
                     score -=2;
                     imgBua4.setVisibility(View.GONE);
                     displayScore();
-                }
+                }displayOver();
             }
         });
 
@@ -219,7 +219,7 @@ public class PlayActivity extends AppCompatActivity {
                     score -=2;
                     imgBua5.setVisibility(View.GONE);
                     displayScore();
-                }
+                }displayOver();
             }
         });
 
@@ -244,7 +244,7 @@ public class PlayActivity extends AppCompatActivity {
                     score -=2;
                     imgBua6.setVisibility(View.GONE);
                     displayScore();
-                }
+                }displayOver();
             }
         });
 
@@ -269,7 +269,7 @@ public class PlayActivity extends AppCompatActivity {
                     score -=2;
                     imgBua7.setVisibility(View.GONE);
                     displayScore();
-                }
+                }displayOver();
             }
         });
 
@@ -294,7 +294,7 @@ public class PlayActivity extends AppCompatActivity {
                     score -=2;
                     imgBua8.setVisibility(View.GONE);
                     displayScore();
-                }
+                }displayOver();
             }
         });
 
@@ -308,7 +308,6 @@ public class PlayActivity extends AppCompatActivity {
                     imgChuot9.setVisibility(View.GONE);
                     score += 1;
                     displayScore();
-
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
@@ -319,7 +318,7 @@ public class PlayActivity extends AppCompatActivity {
                     score -=2;
                     imgBua9.setVisibility(View.GONE);
                     displayScore();
-                }
+                }displayOver();
             }
         });
 
@@ -405,6 +404,16 @@ public class PlayActivity extends AppCompatActivity {
     public void openTimeoutScreen(){
         Intent intent = new Intent(PlayActivity.this, TimeOverActivity.class);
         intent.putExtra("score", score);
+        startActivity(intent);
+    }
+
+    public void displayOver(){
+        if (score < 0){
+            openGameoverScreen();
+        }
+    }
+    public void openGameoverScreen(){
+        Intent intent = new Intent(PlayActivity.this, GameOverActivity.class);
         startActivity(intent);
     }
 }

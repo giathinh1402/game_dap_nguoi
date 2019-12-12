@@ -1,6 +1,7 @@
 package com.example.game;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -22,6 +23,8 @@ public class PlayActivity extends AppCompatActivity {
     ImageView imgChuot1, imgChuot2, imgChuot3, imgChuot4, imgChuot5, imgChuot6, imgChuot7, imgChuot8, imgChuot9;
     TextView textTime, textScore;
     int score = 0;
+    Timer timerChuot;
+    CountDownTimer countDownTimer;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -107,6 +110,8 @@ public class PlayActivity extends AppCompatActivity {
                 if (imgChuot1.getVisibility() == View.VISIBLE) {
                     imgChuot1.setVisibility(View.GONE);
                     score += 1;
+                    final MediaPlayer mp = MediaPlayer.create(PlayActivity.this, R.raw.touch);
+                    mp.start();
                     displayScore();
 
                     new Handler().postDelayed(new Runnable() {
@@ -115,11 +120,12 @@ public class PlayActivity extends AppCompatActivity {
                             imgBua1.setVisibility(View.GONE);
                         }
                     }, 200);
-                }else{
-                    score -=2;
+                } else {
+                    score -= 2;
                     imgBua1.setVisibility(View.GONE);
                     displayScore();
-                }displayOver();
+                }
+                displayOver();
             }
         });
 
@@ -132,6 +138,8 @@ public class PlayActivity extends AppCompatActivity {
                 if (imgChuot2.getVisibility() == View.VISIBLE) {
                     imgChuot2.setVisibility(View.GONE);
                     score += 1;
+                    final MediaPlayer mp = MediaPlayer.create(PlayActivity.this, R.raw.touch);
+                    mp.start();
                     displayScore();
 
                     new Handler().postDelayed(new Runnable() {
@@ -140,11 +148,12 @@ public class PlayActivity extends AppCompatActivity {
                             imgBua2.setVisibility(View.GONE);
                         }
                     }, 200);
-                }else{
-                    score -=2;
+                } else {
+                    score -= 2;
                     imgBua2.setVisibility(View.GONE);
                     displayScore();
-                }displayOver();
+                }
+                displayOver();
             }
         });
 
@@ -157,6 +166,8 @@ public class PlayActivity extends AppCompatActivity {
                 if (imgChuot3.getVisibility() == View.VISIBLE) {
                     imgChuot3.setVisibility(View.GONE);
                     score += 1;
+                    final MediaPlayer mp = MediaPlayer.create(PlayActivity.this, R.raw.touch);
+                    mp.start();
                     displayScore();
 
                     new Handler().postDelayed(new Runnable() {
@@ -165,11 +176,12 @@ public class PlayActivity extends AppCompatActivity {
                             imgBua3.setVisibility(View.GONE);
                         }
                     }, 200);
-                }else{
-                    score -=2;
+                } else {
+                    score -= 2;
                     imgBua3.setVisibility(View.GONE);
                     displayScore();
-                }displayOver();
+                }
+                displayOver();
             }
         });
 
@@ -182,6 +194,8 @@ public class PlayActivity extends AppCompatActivity {
                 if (imgChuot4.getVisibility() == View.VISIBLE) {
                     imgChuot4.setVisibility(View.GONE);
                     score += 1;
+                    final MediaPlayer mp = MediaPlayer.create(PlayActivity.this, R.raw.touch);
+                    mp.start();
                     displayScore();
 
                     new Handler().postDelayed(new Runnable() {
@@ -190,11 +204,12 @@ public class PlayActivity extends AppCompatActivity {
                             imgBua4.setVisibility(View.GONE);
                         }
                     }, 200);
-                }else{
-                    score -=2;
+                } else {
+                    score -= 2;
                     imgBua4.setVisibility(View.GONE);
                     displayScore();
-                }displayOver();
+                }
+                displayOver();
             }
         });
 
@@ -207,6 +222,8 @@ public class PlayActivity extends AppCompatActivity {
                 if (imgChuot5.getVisibility() == View.VISIBLE) {
                     imgChuot5.setVisibility(View.GONE);
                     score += 1;
+                    final MediaPlayer mp = MediaPlayer.create(PlayActivity.this, R.raw.touch);
+                    mp.start();
                     displayScore();
 
                     new Handler().postDelayed(new Runnable() {
@@ -215,11 +232,12 @@ public class PlayActivity extends AppCompatActivity {
                             imgBua5.setVisibility(View.GONE);
                         }
                     }, 200);
-                }else{
-                    score -=2;
+                } else {
+                    score -= 2;
                     imgBua5.setVisibility(View.GONE);
                     displayScore();
-                }displayOver();
+                }
+                displayOver();
             }
         });
 
@@ -232,6 +250,8 @@ public class PlayActivity extends AppCompatActivity {
                 if (imgChuot6.getVisibility() == View.VISIBLE) {
                     imgChuot6.setVisibility(View.GONE);
                     score += 1;
+                    final MediaPlayer mp = MediaPlayer.create(PlayActivity.this, R.raw.touch);
+                    mp.start();
                     displayScore();
 
                     new Handler().postDelayed(new Runnable() {
@@ -240,11 +260,12 @@ public class PlayActivity extends AppCompatActivity {
                             imgBua6.setVisibility(View.GONE);
                         }
                     }, 200);
-                }else{
-                    score -=2;
+                } else {
+                    score -= 2;
                     imgBua6.setVisibility(View.GONE);
                     displayScore();
-                }displayOver();
+                }
+                displayOver();
             }
         });
 
@@ -257,6 +278,8 @@ public class PlayActivity extends AppCompatActivity {
                 if (imgChuot7.getVisibility() == View.VISIBLE) {
                     imgChuot7.setVisibility(View.GONE);
                     score += 1;
+                    final MediaPlayer mp = MediaPlayer.create(PlayActivity.this, R.raw.touch);
+                    mp.start();
                     displayScore();
 
                     new Handler().postDelayed(new Runnable() {
@@ -265,11 +288,12 @@ public class PlayActivity extends AppCompatActivity {
                             imgBua7.setVisibility(View.GONE);
                         }
                     }, 200);
-                }else{
-                    score -=2;
+                } else {
+                    score -= 2;
                     imgBua7.setVisibility(View.GONE);
                     displayScore();
-                }displayOver();
+                }
+                displayOver();
             }
         });
 
@@ -282,6 +306,8 @@ public class PlayActivity extends AppCompatActivity {
                 if (imgChuot8.getVisibility() == View.VISIBLE) {
                     imgChuot8.setVisibility(View.GONE);
                     score += 1;
+                    final MediaPlayer mp = MediaPlayer.create(PlayActivity.this, R.raw.touch);
+                    mp.start();
                     displayScore();
 
                     new Handler().postDelayed(new Runnable() {
@@ -290,11 +316,12 @@ public class PlayActivity extends AppCompatActivity {
                             imgBua8.setVisibility(View.GONE);
                         }
                     }, 200);
-                }else{
-                    score -=2;
+                } else {
+                    score -= 2;
                     imgBua8.setVisibility(View.GONE);
                     displayScore();
-                }displayOver();
+                }
+                displayOver();
             }
         });
 
@@ -307,6 +334,8 @@ public class PlayActivity extends AppCompatActivity {
                 if (imgChuot9.getVisibility() == View.VISIBLE) {
                     imgChuot9.setVisibility(View.GONE);
                     score += 1;
+                    final MediaPlayer mp = MediaPlayer.create(PlayActivity.this, R.raw.touch);
+                    mp.start();
                     displayScore();
                     new Handler().postDelayed(new Runnable() {
                         @Override
@@ -314,15 +343,17 @@ public class PlayActivity extends AppCompatActivity {
                             imgBua9.setVisibility(View.GONE);
                         }
                     }, 200);
-                }else{
-                    score -=2;
+                } else {
+                    score -= 2;
                     imgBua9.setVisibility(View.GONE);
                     displayScore();
-                }displayOver();
+                }
+                displayOver();
             }
         });
 
-        new Timer().scheduleAtFixedRate(new TimerTask() {
+        timerChuot = new Timer();
+        timerChuot.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
                 runOnUiThread(new Runnable() {
@@ -340,80 +371,97 @@ public class PlayActivity extends AppCompatActivity {
         int randomNumber = new Random().nextInt(9 - 1 + 1) + 1;
         if (randomNumber == 1) {
             imgChuot1.setVisibility(View.VISIBLE);
-        }else{
+        } else {
             imgChuot1.setVisibility(View.GONE);
         }
         if (randomNumber == 2) {
             imgChuot2.setVisibility(View.VISIBLE);
-        }else{
+        } else {
             imgChuot2.setVisibility(View.GONE);
         }
         if (randomNumber == 3) {
             imgChuot3.setVisibility(View.VISIBLE);
-        }else{
+        } else {
             imgChuot3.setVisibility(View.GONE);
         }
         if (randomNumber == 4) {
             imgChuot4.setVisibility(View.VISIBLE);
-        }else{
+        } else {
             imgChuot4.setVisibility(View.GONE);
         }
         if (randomNumber == 5) {
             imgChuot5.setVisibility(View.VISIBLE);
-        }else{
+        } else {
             imgChuot5.setVisibility(View.GONE);
         }
         if (randomNumber == 6) {
             imgChuot6.setVisibility(View.VISIBLE);
-        }else{
+        } else {
             imgChuot6.setVisibility(View.GONE);
         }
         if (randomNumber == 7) {
             imgChuot7.setVisibility(View.VISIBLE);
-        }else{
+        } else {
             imgChuot7.setVisibility(View.GONE);
         }
         if (randomNumber == 8) {
             imgChuot8.setVisibility(View.VISIBLE);
-        }else{
+        } else {
             imgChuot8.setVisibility(View.GONE);
         }
         if (randomNumber == 9) {
             imgChuot9.setVisibility(View.VISIBLE);
-        }else{
+        } else {
             imgChuot9.setVisibility(View.GONE);
         }
     }
 
-    private void countDownTime(){
-        new CountDownTimer(20000, 1000){
-            public void onTick(long millisUntilFinished){
+    private void countDownTime() {
+        countDownTimer = new CountDownTimer(20000, 1000) {
+            public void onTick(long millisUntilFinished) {
                 textTime.setText("Time: " + millisUntilFinished / 1000);
             }
-            public void onFinish(){
+
+            public void onFinish() {
                 textTime.setText("Time Over");
                 openTimeoutScreen();
             }
-        }.start();
+        };
+        countDownTimer.start();
     }
 
     public void displayScore() {
         textScore.setText("" + score);
     }
 
-    public void openTimeoutScreen(){
+    public void openTimeoutScreen() {
+        timerChuot.cancel();
+        finish();
         Intent intent = new Intent(PlayActivity.this, TimeOverActivity.class);
         intent.putExtra("score", score);
         startActivity(intent);
+
     }
 
-    public void displayOver(){
-        if (score < 0){
+    public void displayOver() {
+        if (score < 0) {
             openGameoverScreen();
+            int textTime = 0;
         }
     }
-    public void openGameoverScreen(){
+
+    public void openGameoverScreen() {
+        countDownTimer.cancel();
+        timerChuot.cancel();
+        finish();
         Intent intent = new Intent(PlayActivity.this, GameOverActivity.class);
         startActivity(intent);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        countDownTimer.cancel();
+        timerChuot.cancel();
     }
 }

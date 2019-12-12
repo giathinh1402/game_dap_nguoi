@@ -1,6 +1,7 @@
 package com.example.game;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class TimeOverActivity extends AppCompatActivity {
     TextView textScore;
-    ImageView playAgain;
+    TextView playAgain;
 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,11 +23,12 @@ public class TimeOverActivity extends AppCompatActivity {
         int score = getIntent().getIntExtra("score", 0);
         displayScore(score);
 
-        ImageView btnCallActivityPlay;
-        btnCallActivityPlay = (ImageView) findViewById(R.id.play_again);
-        btnCallActivityPlay.setOnClickListener(new View.OnClickListener() {
+        playAgain = findViewById(R.id.play_again);
+        playAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                final MediaPlayer mp = MediaPlayer.create(TimeOverActivity.this, R.raw.click);
+                mp.start();
                 Intent intent = new Intent(TimeOverActivity.this, PlayActivity.class);
                 startActivity(intent);
             }

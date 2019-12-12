@@ -14,7 +14,6 @@
             android:layout_marginLeft="-20dp">
 
             <ImageView
-                android:id="@+id/play_again"
                 android:layout_width="648dp"
                 android:layout_height="155dp"
                 android:layout_marginLeft="70dp"
@@ -22,12 +21,14 @@
                 android:background="@drawable/time" />
 
             <TextView
+                android:id="@+id/play_again"
                 android:layout_width="492dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="250dp"
                 android:layout_marginTop="20dp"
+                android:clickable="true"
                 android:text="Play again"
-                android:textColor="#f7b08b"
+                android:textColor="@color/text_play_again"
                 android:textSize="80dp" />
         </FrameLayout>
     </LinearLayout>

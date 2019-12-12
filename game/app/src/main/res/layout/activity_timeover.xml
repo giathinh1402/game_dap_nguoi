@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/time_over"
-    android:layout_height="match_parent">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -75,26 +76,27 @@
     <LinearLayout
         android:layout_width="753dp"
         android:layout_height="227dp">
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/play_again"
                 android:layout_width="443dp"
                 android:layout_height="114dp"
                 android:layout_marginLeft="250dp"
                 android:background="@drawable/time" />
 
             <TextView
+                android:id="@+id/play_again"
                 android:layout_width="336dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="350dp"
                 android:layout_marginTop="10dp"
+                android:clickable="true"
                 android:text="Play again"
-                android:textColor="#f7b08b"
+                android:textColor="@color/text_play_again"
                 android:textSize="60dp" />
-
 
         </FrameLayout>
     </LinearLayout>
